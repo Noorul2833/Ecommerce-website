@@ -1,0 +1,78 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .tshirts-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .tshirt-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .tshirt-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .tshirt-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .tshirt-price {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart-button {
+    background-color: #0073bb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #005bb5;
+  }
+  
+  .size-selector {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .size-selector select {
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  .selected-size {
+    margin: 10px 0;
+    font-size: 1em;
+  }
+  
+  .added-to-cart-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  

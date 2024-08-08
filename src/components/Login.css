@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: opacity 0.3 s ease-in-out;
+}
+
+.header.hidden {
+  opacity: 0;
+}
+.logo {
+  width: 70px; 
+  height: auto;
+  margin-right: 10px; 
+}
+.site-name {
+  font-size: 24px; 
+  color: black; 
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-right: 2000px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('C:\Users\nooru\sigma\src\login.png'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.login-box {
+  background-color: whitesmoke;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  align-items: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0073bb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #005bb5;
+}
+
+.forgot-password, .create-account {
+  margin-top: 15px;
+}
+
+.forgot-password a, .create-account a {
+  color: #0073bb;
+  text-decoration: none;
+}
+
+.forgot-password a:hover, .create-account a:hover {
+  text-decoration: underline;
+}

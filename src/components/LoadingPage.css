@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: whitesmoke;
+    transition: opacity 2s ease-in-out;
+    opacity: 0;
+  }
+  
+  .loading-container.fade-in {
+    opacity: 1;
+  }
+  
+  .linear-loader {
+    width: 100%;
+    height: 4px;
+    background-color: #ddd;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .linear-loader::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #0073bb;
+    animation: linear-loader 3s infinite;
+  }
+  
+  @keyframes linear-loader {
+    0% {
+      left: -100%;
+      width: 100%;
+    }
+    50% {
+      left: 50%;
+      width: 10%;
+    }
+    100% {
+      left: 100%;
+      width: 100%;
+    }
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loading-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .loading-title {
+    font-size: 2em;
+    color: #333;
+  }
+  
